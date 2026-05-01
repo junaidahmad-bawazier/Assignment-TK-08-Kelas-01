@@ -18,6 +18,10 @@ double Sub (double a,double b) {
     return a - b;
 }
 
+//mul   
+
+//div -> nanti kalo dibagi 0 error aja  (kalo var2 = 0 error)
+
 double hasil (Calc k) {
     switch (k.calculator) {
     case add: return Add(k.var1,k.var2);
@@ -50,6 +54,16 @@ int main () {
         }
 
         kalkulator.calculator = (Calculator)pilihan;
+
+        printf("\nMasukkan angka pertama : ");
+        scanf("%lf", &kalkulator.var1);
+
+        printf("Masukkan angka kedua : ");
+        scanf("%lf", &kalkulator.var2);      
+        
+        Hasil = hasil(kalkulator);
+
+        printf("\nHasilnya adalah : %.2f", Hasil);
 
     } while (pilihan != 4);
 
