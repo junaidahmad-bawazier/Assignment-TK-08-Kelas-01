@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+typedef enum {
+    add, sub, //mul, //div
+} Calculator;
+
+typedef struct {
+    Calculator calculator;
+    double var1;
+    double var2;
+} Calc;
+
+double Add (double a,double b) {
+    return a + b;
+}
+
+double Sub (double a,double b) {
+    return a - b;
+}
+
+double hasil (Calc k) {
+    switch (k.calculator) {
+    case add: return Add(k.var1,k.var2);
+    case sub: return Sub(k.var1,k.var2);
+    //mul   
+    //div
+    }
+}
+
+int main () {
+    int pilihan;
+    Calc kalkulator;
+    double Hasil;
+
+    printf("=== Program Kalkulator Sederhana untuk 2 Angka ===\n");
+
+    do {
+        printf("\n\nSilahkan pilih Opsi dibawah ini\n\n");
+        printf("0. Addition\n");
+        printf("1. Subtraction\n");
+        printf("2. Multiplication\n");
+        printf("3. Division\n");
+        printf("4. Stop\n\n");
+
+        printf("Pilihan anda : ");
+        scanf("%d", &pilihan);
+
+        if (pilihan == 4) {
+            break;
+        }
+
+        kalkulator.calculator = (Calculator)pilihan;
+
+    } while (pilihan != 4);
+
+    return 0;
+}
