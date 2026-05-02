@@ -7,6 +7,6 @@ Junaid Ahmad Bawazier (Ketua)
 - Membuat struktur dan alur utama program
 - Membuat function add, sub dan hasil
 
-Alsa Rahim Amse
+Alsa Rahim Amsel
 - Membuat function Mul
 - Mengaktifkan opsi mul pada enum Calculator
