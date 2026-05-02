@@ -10,7 +10,6 @@ typedef struct {
     double var2;
 } Calc;
 
-
 double Add (double a,double b) {
     return a + b;
 }
