@@ -10,3 +10,7 @@ Junaid Ahmad Bawazier (Ketua)
 Alsa Rahim Amsel
 - Membuat function Mul
 - Mengaktifkan opsi mul pada enum Calculator
+
+Teuku Muhammad Syah Althaf
+- Membuat function Div
+- Mengaktifkan opsi Div pada enum Calculator
