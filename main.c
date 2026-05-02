@@ -22,7 +22,6 @@ double Mul (double a, double b) {
     return a * b;
 }
 
-//div -> nanti kalo dibagi 0 error aja  (kalo var2 = 0 error)
 double Div (double a, double b) {
     if (b == 0) {
         printf("Error: Division by zero is not allowed.\n");
